@@ -277,6 +277,8 @@ a:hover { text-decoration: underline; }
   box-shadow: 0 8px 18px rgba(124, 92, 255, 0.35);
 }
 .chip:hover em { color: #d6c9ff; }
+.chip-sm { padding: 4px 14px; font-size: 0.82rem; }
+.project-tech { margin: 12px 0 4px; }
 
 /* ---------- Timeline (Education) ---------- */
 .timeline { max-width: 760px; margin: 0 auto; position: relative; padding-left: 26px; }
