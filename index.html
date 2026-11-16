@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Mst. Khairun Nessa Mim — CSE Student & Digital Marketing Intern</title>
+  <meta name="description" content="Portfolio of Mst. Khairun Nessa Mim, a fourth-year Computer Science & Engineering student at Southeast University, Bangladesh. Interested in web development, data analysis, digital marketing and UI/UX design.">
+  <meta name="author" content="Mst. Khairun Nessa Mim">
+
+  <!-- Open Graph (how the link looks when shared on LinkedIn / Facebook) -->
+  <meta property="og:title" content="Mst. Khairun Nessa Mim — CSE Student & Digital Marketing Intern">
+  <meta property="og:description" content="Curious Mind. Creative Ideas. Continuous Growth. Portfolio of a CSE student at Southeast University with internship experience in digital marketing and influencer research.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khairunmim-dev.github.io/">
+  <meta property="og:image" content="https://khairunmim-dev.github.io/assets/images/profile.jpg">
+
+  <!-- Favicon (simple "M" monogram) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%237c5cff'/><stop offset='1' stop-color='%230a1f44'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text x='50' y='63' font-size='27' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>KNM</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo"><span class="logo-badge">KNM</span><span class="logo-name">Khairun Nessa <span class="logo-highlight">Mim</span><span class="logo-dot">.</span></span></a>
+
+      <ul class="nav-list" id="navList">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Dark / Light mode button -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch between dark and light mode">🌙</button>
+
+      <!-- Hamburger button (mobile only) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO / HOME ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="hero-badge">Open to Opportunities</span>
+          <h1>Hello, I'm <span class="accent">Khairun Nessa Mim</span>.</h1>
+          <h2 class="hero-title">I am a <span class="typed" id="typedText"></span><span class="typed-cursor">|</span></h2>
+          <!-- The words above change by typing effect (see script.js).
+               The full title is kept here for search engines: -->
+          <p class="hero-fulltitle">Computer Science &amp; Engineering Student | Digital Marketing Intern | Aspiring Technology Professional</p>
+          <p class="hero-tagline">"Curious Mind. Creative Ideas. Continuous Growth."</p>
+          <p class="hero-intro">
+            I am a fourth-year Computer Science and Engineering student at Southeast University with an
+            interest in technology, web development, data analysis, digital marketing, and user experience
+            design. I enjoy learning new technologies, exploring creative ideas, conducting research, and
+            developing practical skills through academic and professional experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <!-- CV: put your CV file at assets/cv/cv.pdf and this button will work -->
+            <a href="assets/cv/cv.pdf" class="btn btn-outline" download>Download CV</a>
+          </div>
+          <div class="social-row">
+            <a class="social-btn" href="https://github.com/khairunmim-dev" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+            <!-- TODO: replace # with your real LinkedIn profile link -->
+            <a class="social-btn" href="https://www.linkedin.com/in/mst-khairun-nessa-mim/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+            <a class="social-btn" href="mailto:mimpakhi05@gmail.com" aria-label="Email"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.3 12 12l9.5-6.7V5A1.5 1.5 0 0 0 20 3.5H4A1.5 1.5 0 0 0 2.5 5v.3zM21.5 7.4l-9.5 6.7-9.5-6.7V19A1.5 1.5 0 0 0 4 20.5h16a1.5 1.5 0 0 0 1.5-1.5V7.4z"/></svg></a>
+            <a class="social-btn" href="https://wa.me/8801601644789" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 11.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <!-- Replace assets/images/profile.jpg with your own photo (same file name) -->
+          <div class="photo-frame">
+            <img src="assets/images/profile.jpg" alt="Portrait of Mst. Khairun Nessa Mim"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="photo-placeholder" style="display:none;">M</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <p class="section-subtitle reveal">Who I am and what I am working towards</p>
+
+        <div class="about-card reveal">
+          <p>
+            I am a fourth-year <strong>Computer Science and Engineering</strong> student at
+            <strong>Southeast University, Bangladesh</strong>, currently in my 11th semester. My academic
+            journey has built my interest in technology, problem-solving, and the way digital products
+            are designed and experienced by people.
+          </p>
+          <p>
+            Alongside my studies, I am gaining professional experience as an <strong>Intern at EXITO</strong>,
+            a digital marketing and creative agency, where I work on influencer research, data collection,
+            and spreadsheet management for brand campaigns. This experience has taught me how research and
+            organised data support real marketing decisions.
+          </p>
+          <p>
+            I am also developing an interest in <strong>web development, UI/UX design, and data analysis</strong>,
+            and I am currently learning HTML and CSS while building my own projects. I am a willing learner
+            who adapts quickly, works well in a team, and enjoys turning ideas into practical results.
+          </p>
+        </div>
+
+        <!-- Currently Learning -->
+        <h3 class="sub-heading reveal">Currently Learning</h3>
+        <div class="chip-row reveal">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Responsive Web Design</span>
+          <span class="chip">JavaScript <em>(next goal)</em></span>
+          <span class="chip">Practical Web Development</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Technical Skills</h2>
+        <p class="section-subtitle reveal">What I know — honestly labelled</p>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Office &amp; Productivity</h3>
+            <ul>
+              <li>Microsoft Word</li>
+              <li>Microsoft Excel</li>
+              <li>Microsoft PowerPoint</li>
+              <li>Google Sheets</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Web Development</h3>
+            <ul>
+              <li>HTML5 <span class="level">Beginner</span></li>
+              <li>CSS3 <span class="level">Learning</span></li>
+              <li>JavaScript <span class="level">Learning Goal</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Design</h3>
+            <ul>
+              <li>Figma</li>
+              <li>UI/UX Design <span class="level">Learning</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Data &amp; Research</h3>
+            <ul>
+              <li>Data Collection</li>
+              <li>Data Entry</li>
+              <li>Online Research</li>
+              <li>Property Data Research</li>
+              <li>Influencer Research</li>
+              <li>Spreadsheet Management</li>
+              <li>Data Organization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title reveal">Professional Experience</h2>
+        <p class="section-subtitle reveal">What I do and where I have worked</p>
+
+        <!-- Experience 1: EXITO -->
+        <article class="exp-card reveal">
+          <div class="exp-head">
+            <h3>Intern</h3>
+            <span class="exp-tag">Internship</span>
+          </div>
+          <p class="exp-org">EXITO — Digital Marketing &amp; Creative Agency</p>
+          <ul class="exp-list">
+            <li>Researched and shortlisted male university-going influencers for brand promotional campaigns.</li>
+            <li>Identified macro influencers for potential brand collaborations.</li>
+            <li>Researched static content creators for promotional campaigns.</li>
+            <li>Collected and organized influencer information.</li>
+            <li>Searched for relevant creators and updated research spreadsheets.</li>
+            <li>Supported influencer research and campaign-related activities.</li>
+          </ul>
+          <div class="exp-buttons">
+            <a class="btn btn-small" href="https://exitobd.com/" target="_blank" rel="noopener">Visit Company Website</a>
+            <a class="btn btn-small btn-outline" href="https://www.facebook.com/exitobd.co" target="_blank" rel="noopener">View Facebook Page</a>
+            <a class="btn btn-small btn-outline" href="https://www.linkedin.com/company/exitobd/" target="_blank" rel="noopener">View LinkedIn Profile</a>
+          </div>
+        </article>
+
+        <!-- Experience 2: Future Cloud BD -->
+        <article class="exp-card reveal">
+          <div class="exp-head">
+            <h3>Junior Data Analyst — Training &amp; Assessment Participant</h3>
+            <span class="exp-tag">Training</span>
+          </div>
+          <p class="exp-org">Future Cloud BD · 3-Day Training &amp; Assessment Program · 2026</p>
+          <p>
+            Participated in a three-day training and assessment program after an interview for a Junior
+            Data Analyst opportunity. This was a training and assessment experience, not a confirmed position.
+          </p>
+          <ul class="exp-list">
+            <li>Collected real estate and apartment-related information using Zillow.</li>
+            <li>Researched property listings and real estate agencies across different locations.</li>
+            <li>Collected agency names, contact numbers, and relevant property information.</li>
+            <li>Used Google Sheets to organize and manage collected datasets.</li>
+            <li>Practiced online research, data collection, and spreadsheet management.</li>
+          </ul>
+          <div class="exp-buttons">
+            <a class="btn btn-small btn-outline" href="https://www.facebook.com/FutureCloudBD" target="_blank" rel="noopener">View Future Cloud BD Facebook Page</a>
+          </div>
+        </article>
+
+        <!-- Experience 3: Private Tutor -->
+        <article class="exp-card reveal">
+          <div class="exp-head">
+            <h3>Private Tutor</h3>
+            <span class="exp-tag">2024 – Present</span>
+          </div>
+          <ul class="exp-list">
+            <li>Provided academic support to students from Classes 5–7.</li>
+            <li>Explained difficult topics in an understandable way.</li>
+            <li>Prepared study materials and lesson plans.</li>
+            <li>Helped students improve their understanding of core subjects.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">My Projects</h2>
+        <p class="section-subtitle reveal">What I have built so far — more are on the way as I learn</p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-1">Portfolio</div>
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>This website — a responsive personal portfolio built with plain HTML, CSS and JavaScript to present my education, experience and skills.</p>
+              <p class="project-tech">HTML · CSS · JavaScript</p>
+              <span class="status status-progress">In Progress</span>
+              <div class="project-links">
+                <a class="btn btn-small btn-icon" href="https://github.com/khairunmim-dev" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
+                <a class="btn btn-small btn-outline" href="#home">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+                  </div>
+        <p class="projects-note reveal">More projects are on the way — I am currently learning JavaScript and building my next project. This section will be updated as each project is completed.</p>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title reveal">Education</h2>
+        <p class="section-subtitle reveal">My academic background</p>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>BSc in Computer Science &amp; Engineering</h3>
+              <p class="timeline-org">Southeast University, Bangladesh</p>
+              <p class="timeline-meta">11th Semester (Fourth Year) · Currently Studying · CGPA 3.73 / 4.00</p>
+              <p>Current semester: 15 credits. My upcoming final semester is expected to include Graphics Lab, Internship, and the Final Research Defense.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Higher Secondary Certificate (HSC)</h3>
+              <p class="timeline-org">Begum Badrunnesa Government Girls' College</p>
+              <p class="timeline-meta">Science Group · 2021 · GPA 5.00 / 5.00</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Secondary School Certificate (SSC)</h3>
+              <p class="timeline-org">Barnamala Adarsha High School &amp; College</p>
+              <p class="timeline-meta">2019 · GPA 5.00 / 5.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INTERESTS, LANGUAGES & STRENGTHS ================= -->
+    <section class="section section-alt" id="interests">
+      <div class="container">
+        <h2 class="section-title reveal">Areas of Interest</h2>
+        <p class="section-subtitle reveal">Topics I am curious about and exploring as a student</p>
+        <div class="chip-row reveal">
+          <span class="chip">Web Technologies</span>
+          <span class="chip">Data Analysis</span>
+          <span class="chip">UI/UX Design</span>
+          <span class="chip">Educational Technology</span>
+        </div>
+
+        <div class="two-col">
+          <div class="info-card reveal">
+            <h3>Languages</h3>
+            <ul class="plain-list">
+              <li>Bangla</li>
+              <li>English</li>
+              <li>Hindi</li>
+            </ul>
+          </div>
+          <div class="info-card reveal">
+            <h3>Strengths</h3>
+            <div class="chip-row chip-row-left">
+              <span class="chip">Quick Learning</span>
+              <span class="chip">Problem Solving</span>
+              <span class="chip">Team Collaboration</span>
+              <span class="chip">Time Management</span>
+              <span class="chip">Communication</span>
+              <span class="chip">Adaptability</span>
+              <span class="chip">Research &amp; Information Gathering</span>
+              <span class="chip">Attention to Detail</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <p class="section-subtitle reveal">I am a final-year CSE student — feel free to reach out for networking, guidance, or collaboration</p>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+            <p>Reach me through any of the buttons below — email, LinkedIn, GitHub or WhatsApp — or send a message using the form; it will reach my email inbox.</p>
+            <div class="contact-buttons">
+              <a class="btn btn-primary btn-icon" href="mailto:mimpakhi05@gmail.com"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.3 12 12l9.5-6.7V5A1.5 1.5 0 0 0 20 3.5H4A1.5 1.5 0 0 0 2.5 5v.3zM21.5 7.4l-9.5 6.7-9.5-6.7V19A1.5 1.5 0 0 0 4 20.5h16a1.5 1.5 0 0 0 1.5-1.5V7.4z"/></svg>Email Me</a>
+              <a class="btn btn-outline btn-icon" href="https://www.linkedin.com/in/mst-khairun-nessa-mim/" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn</a>
+              <a class="btn btn-outline btn-icon" href="https://github.com/khairunmim-dev" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
+              <a class="btn btn-outline btn-icon" href="https://wa.me/8801601644789" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 11.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>WhatsApp</a>
+            </div>
+          </div>
+
+          <!-- Messages from this form are delivered to my email inbox.
+               Sending is activated through a free form service — see README.md.
+               Until then, the form opens the visitor's email app instead. -->
+          <form class="contact-form reveal" id="contactForm">
+            <label for="cf-name">Your Name</label>
+            <input type="text" id="cf-name" name="name" required placeholder="Your name">
+
+            <label for="cf-email">Your Email</label>
+            <input type="email" id="cf-email" name="email" required placeholder="you@example.com">
+
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required placeholder="Write your message..."></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand"><span class="logo-badge">KNM</span><p class="footer-name">Mst. Khairun Nessa Mim</p></div>
+      <p class="footer-tagline">Curious Mind. Creative Ideas. Continuous Growth.</p>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-social">
+        <a class="social-btn" href="https://github.com/khairunmim-dev" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a class="social-btn" href="https://www.linkedin.com/in/mst-khairun-nessa-mim/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a class="social-btn" href="mailto:mimpakhi05@gmail.com" aria-label="Email"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.3 12 12l9.5-6.7V5A1.5 1.5 0 0 0 20 3.5H4A1.5 1.5 0 0 0 2.5 5v.3zM21.5 7.4l-9.5 6.7-9.5-6.7V19A1.5 1.5 0 0 0 4 20.5h16a1.5 1.5 0 0 0 1.5-1.5V7.4z"/></svg></a>
+        <a class="social-btn" href="https://wa.me/8801601644789" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 11.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Mst. Khairun Nessa Mim. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
