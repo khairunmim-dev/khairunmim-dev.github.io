@@ -340,6 +340,7 @@ a:hover { text-decoration: underline; }
 }
 .thumb-1 { background: linear-gradient(135deg, var(--navy), var(--purple)); }
 .thumb-2 { background: linear-gradient(135deg, #14532d, #22c55e); }
+.thumb-3 { background: linear-gradient(135deg, #0B1B3A, #1E3A8A); color: #F2D06B; }
 .thumb-3 { background: linear-gradient(135deg, #7c2d12, #f59e0b); }
 .thumb-4 { background: linear-gradient(135deg, #155e75, #06b6d4); }
 .project-body { padding: 22px; }
@@ -454,3 +455,13 @@ a:hover { text-decoration: underline; }
   .two-col-list { columns: 2; }
   .contact-grid { grid-template-columns: 1fr 1.2fr; }
 }
+
+/* ---------- Marquee band (scrolling skills strip under the hero) ---------- */
+.marquee { overflow: hidden; background: linear-gradient(90deg, var(--navy), var(--navy-light)); padding: 15px 0; }
+.marquee-track { display: flex; width: max-content; animation: marquee-scroll 32s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-group { display: flex; align-items: center; }
+.marquee-group span { color: #ffffff; font-weight: 600; font-size: 15px; letter-spacing: 0.4px; white-space: nowrap; padding: 0 20px; }
+.marquee-group i { color: var(--purple); font-style: normal; font-size: 13px; }
+@keyframes marquee-scroll { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
